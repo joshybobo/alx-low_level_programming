@@ -1,22 +1,15 @@
-#include <stdio.h>
+#include "main.h"
+
+
+/**
+ * get_endianness - function that checks the endianness.
+ * Return: 0 if big endian, 1 if little endian
+ */
 
 int get_endianness(void)
 {
-    unsigned int j = 1;
-    char *c = (char *)&j;
+	unsigned int endianness = 1;
+	char *the_ptr = (char *)&endianness;
 
-    // If the first byte (lowest address) contains 1, it's little-endian; otherwise, it's big-endian.
-    return (int)(*c);
-}
-
-int main()
-{
-    int endianness = get_endianness();
-    
-    if (endianness == 0)
-        printf("This machine is big-endian.\n");
-    else
-        printf("This machine is little-endian.\n");
-    
-    return 0;
+	return (*the_ptr);
 }
