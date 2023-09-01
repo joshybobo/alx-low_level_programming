@@ -9,12 +9,12 @@
 void print_binary(unsigned long int n)
 {
 int count = sizeof(unsigned long int) * 8 - 1;
-int join = 0;
+int test = 0;
 
 while (count >= 0)
 {
 int bit = (n >> count) & 1;
-if (bit || join)
+if (bit || test)
 {
 _putchar(bit + '0');
 flag = 1;
@@ -22,6 +22,6 @@ flag = 1;
 
 count--;
 }
-if (!join)
+if (!test)
 _putchar('0');
 }
