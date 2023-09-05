@@ -1,4 +1,6 @@
 #include "main.h"
+#include <sys/stat.h>
+#include <fcntl.h>
 
 #define BUFSIZE 1024
 
