@@ -1,19 +1,17 @@
-#include "main.h"
-
-/* Function to print a character */
-void print_character(char c)
+include "main.h"
+/**
+ * _puts_recursion - function like puts();
+ * @s: input
+ * Return: Always 0 (Success)
+ */
+void _puts_recursion(char *s)
 {
-	 _putchar(c);
-}
+        if (*s)
+        {
+                _putchar(*s);
+                _puts_recursion(s + 1);
+        }
 
-/* Function to print a newline character */
-void print_newline(void)
-{
-	 _putchar('\n');
-}
-
-int main(void)
-{
-	print_newline();  /* Call the print_newline function to print a newline */
-	return (0);
+        else
+                _putchar('\n');
 }
