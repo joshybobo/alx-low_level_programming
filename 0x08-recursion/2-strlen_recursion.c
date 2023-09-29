@@ -5,12 +5,15 @@
  *
  * Return;lenght of string
  */
-int_strlen_recursion(char *s)
-	intlongit = 0;
-	 *s == \0
+int _strlen_recursion(char *s)
+{
+	int longit = 0;
+
+	if (*s)
 	{
 	longit++;
-	1 + _strlen_recursion(s + 1);
+	longit += _strlen_recursion(s + 1);
 	}
-	'return' (longit);
-	'}'
+
+	return (longit);
+}
