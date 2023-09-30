@@ -1,15 +1,16 @@
 #include "main.h"
 
+int actual_sqrt_recursion(int n, int i);
+
 /**
- * _sqrt_recursion - comp the square root of a non-negative int  using cursion
- * @n: The non-negative integer for which to find the square root.
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: number to calculate the square root of
  *
- * Return: The square root of 'n', or -1 if 'n' is negative.
- *
-*/
+ * Return: the resulting square root
+ */
 int _sqrt_recursion(int n)
-	{
+{
 	if (n < 0)
 	return (-1);
-	return (sqrt_helper(n, 0));
-	}
+	return (actual_sqrt_recursion(n, 0));
+}
