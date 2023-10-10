@@ -1,1 +1,1 @@
-0x0E. C - Structures, typedef TASK
+In C, a "structure" (often referred to as a "struct") is a user-defined composite data type that groups together variables of different data types under a single name. A structure allows you to create a custom data type that can hold a collection of related data items. Each data item within a structure is called a "member" or "field."
