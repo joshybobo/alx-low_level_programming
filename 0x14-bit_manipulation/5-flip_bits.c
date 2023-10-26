@@ -7,15 +7,15 @@
  * Return: The number of bits flipped
  */
 
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+	unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int x_or = n ^ m;
 	unsigned int flag = 0;
 
 	while (x_or > 0)
 	{
-		flag += x_or & 1;
-		x_or >>= 1;
+	flag += x_or & 1;
+	x_or >>= 1;
 	}
 	return (flag);
 }

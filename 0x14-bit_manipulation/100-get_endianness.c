@@ -6,7 +6,7 @@
  * Return: 0 if big endian, 1 if little endian
  */
 
-int get_endianness(void)
+	int get_endianness(void)
 {
 	unsigned int endianness = 1;
 	char *the_ptr = (char *)&endianness;
